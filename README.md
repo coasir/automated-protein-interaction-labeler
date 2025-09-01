@@ -25,6 +25,7 @@ This project explores a smarter approach to protein complex analysis by employin
 ### Pymol-mcp-server
 For more detailed informations and server, click this link https://github.com/ChatMol/molecule-mcp
 1. Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
+```json
 {
   "mcpServers": {
     "pymol": {
@@ -36,20 +37,21 @@ For more detailed informations and server, click this link https://github.com/Ch
      }
   }
 }
-2. Install mcp and get the script
+```
+3. Install mcp and get the script
+```bash
 pip install "mcp[cli]" chatmol
 which mcp
-
-
+```
 Copy this path for the next step and replace /path/to/mcp with the path to mcp.
-3. To get the path to molecule-mcp.
-'''
+4. To get the path to molecule-mcp.
+```bash
 git clone https://github.com/ChatMol/molecule-mcp.git
 cd molecule-mcp
 pwd
-'''
+```
 the path to molecule-mcp will be displayed. Copy this path for the next step and replace /path/to/molecule-mcp with the path to molecule-mcp.
 
 filesystem-mcp-server
 1. Download Node.js     https://nodejs.org/zh-cn
-   [图片]
+
